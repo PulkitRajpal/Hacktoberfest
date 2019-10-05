@@ -1,19 +1,17 @@
 public class Prime {
     public static void main(String[] args) {
-        int num = 29;
-        boolean flag = false;
-        for(int i = 2; i <= num/2; ++i)
+       	Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+        for(int i = 2; i <= n/2; i++)
         {
             // condition for nonprime number
-            if(num % i == 0)
+            if(n % i == 0)
             {
-                flag = true;
-                break;
+                System.out.println(num + " is a prime number.");
+                return;
             }
         }
-        if (!flag)
-            System.out.println(num + " is a prime number.");
-        else
-            System.out.println(num + " is not a prime number.");
-    }
+         System.out.println(num + " is not a prime number.");
+    
+     }
 }
